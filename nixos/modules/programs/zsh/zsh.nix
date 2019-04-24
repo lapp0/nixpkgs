@@ -160,6 +160,7 @@ in
         if [ -n "$__ETC_ZSHRC_SOURCED" -o -n "$NOSYSZSHRC" ]; then return; fi
         __ETC_ZSHRC_SOURCED=1
 
+        . /etc/set-environment
         . /etc/zinputrc
 
         # history defaults
